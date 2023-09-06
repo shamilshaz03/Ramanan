@@ -1,0 +1,30 @@
+name: Telegram Bot Deploy
+
+on:
+  push:
+    branches:
+      - main  # You can specify your main branch here
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.x  # Specify your Python version
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt  # Install your bot's dependencies
+
+      - name: Run Telegram Bot
+        run: |
+          python your_bot_script.py  # Replace with your script name
+
+      # Add additional steps if needed (e.g., deploying to a server)
+      
