@@ -3,7 +3,7 @@ name: Telegram Bot Deploy
 on:
   push:
     branches:
-      - main  # You can specify your main branch here
+      - main  # Replace with your main branch name if different
 
 jobs:
   deploy:
@@ -24,7 +24,5 @@ jobs:
 
       - name: Run Telegram Bot
         run: |
-          python your_bot_script.py  # Replace with your script name
-
-      # Add additional steps if needed (e.g., deploying to a server)
-      
+          python your_bot_script.py
+          
