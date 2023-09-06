@@ -12,14 +12,17 @@
         },
         "BOT_TOKEN": {
             "description": "Your bot token.",
-            "required": true
+            "value" "5489052894:AAGDU5aBZTKRD3SgJWPSIdMagFHZozMqY_Q",
+            "required": false
         },
         "API_ID": {
             "description": "Get this value from https://my.telegram.org",
+            "value" "18063763",
             "required": true
         },
         "API_HASH": {
             "description": "Get this value from https://my.telegram.org",
+            "value" "f8bbe42c559b4c7dbddda61b7f0481bb",
             "required": true
         },
         "CHANNELS": {
