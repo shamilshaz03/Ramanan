@@ -1,3 +1,4 @@
+import os
 import re, time
 from os import environ
 from Script import script 
@@ -11,7 +12,7 @@ def is_enabled(value, default):
 
 
 # PyroClient Setup 
-API_ID = int(environ['18063763'])
+API_ID = int(os.environ['18063763'])
 API_HASH = environ['f8bbe42c559b4c7dbddda61b7f0481bb']
 BOT_TOKEN = environ['5489052894:AAGDU5aBZTKRD3SgJWPSIdMagFHZozMqY_Q']
 
