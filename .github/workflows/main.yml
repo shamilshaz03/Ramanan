@@ -24,5 +24,5 @@ jobs:
 
       - name: Run Telegram Bot
         run: |
-          python your_bot_script.py
+          python script.py
           
